@@ -48,8 +48,8 @@ export function MagneticDeck() {
 
     let fit = 1;
     const measure = () => {
-      fit = Math.min(1, window.innerWidth / SPAN, window.innerHeight / 760);
-      fit = Math.max(0.42, fit);
+      fit = Math.min(1, window.innerWidth / (SPAN * 1.1), window.innerHeight / 760);
+      fit = Math.max(0.3, fit);
     };
     measure();
     window.addEventListener("resize", measure);
@@ -156,7 +156,8 @@ export function MagneticDeck() {
 
     let raf = 0;
     const tick = () => {
-      if (cardMode && !reduced) driveVirtual();
+      const isMobile = window.innerWidth < 768;
+      if ((cardMode || isMobile) && !reduced) driveVirtual();
 
       const dx = cursor.x - cursor.lastX;
       const dy = cursor.y - cursor.lastY;
@@ -212,12 +213,12 @@ export function MagneticDeck() {
   }, []);
 
   return (
-    <section className="md-field bg-white py-24 border-t border-black/5" ref={fieldRef}>
+    <section className="md-field bg-white py-16 md:py-24 border-t border-black/5" ref={fieldRef}>
       <style>{css}</style>
 
       <div className="text-center mb-10 relative z-10 pointer-events-none">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-black mb-4">Crafted with this Stack</h2>
-        <p className="text-gray-500 font-medium">Flick your cursor across the cards to scatter them.</p>
+        <p className="text-gray-500 font-medium px-4">Interact with the cards or watch them scatter.</p>
       </div>
 
       <div className="md-hub" ref={hubRef}>
@@ -248,11 +249,16 @@ const css = `
   .md-field {
     position: relative;
     width: 100%;
-    min-height: 700px;
+    min-height: 450px;
     overflow: hidden;
     cursor: crosshair;
     -webkit-user-select: none;
     user-select: none;
+  }
+  @media (min-width: 768px) {
+    .md-field {
+      min-height: 700px;
+    }
   }
 
   .md-hub {
