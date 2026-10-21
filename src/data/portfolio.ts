@@ -33,9 +33,9 @@ export const projects: Project[] = [
   {
     id: "pln",
     title: "Transformer Defect Reporting System",
-    org: "PLN UP3 Ponorogo",
-    role: "Full-Stack Developer",
-    period: "2024 · Internship",
+    org: "PT. PLN (Persero)",
+    role: "Fullstack Developer Intern",
+    period: "Sep 2025 — Dec 2025 · Internship",
     highlight:
       "An end-to-end digital system for recording & evaluating PLN distribution transformer infrastructure.",
     tags: ["React", "Node.js", "Express", "MySQL", "Sequelize"],
@@ -45,42 +45,26 @@ export const projects: Project[] = [
     tagline: "Digital Transformer Management",
     accentColor: "#dbeafe",
     category: "Engineering",
-    imageUrl: "/img/dashboardPLN.png",
-  },
-  {
-    id: "task-management",
-    title: "Task Management App",
-    org: "Personal Project",
-    role: "UI/UX Designer",
-    period: "2024",
-    highlight:
-      "User interface design for a minimalist task management application.",
-    tags: ["Figma", "Prototyping", "UX Research"],
-    hasCaseStudy: false,
-    gradient: "from-pink-100 to-rose-100",
-    monogram: "TM",
-    tagline: "UI/UX App Design",
-    accentColor: "#fce7f3",
-    category: "Design",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=85&w=800&auto=format&fit=crop",
+    githubUrl: "https://github.com/tutupolpenn/Magang-PLN",
+    imageUrl: "/img/dashboardPLN.webp",
   },
   {
     id: "aquafarm",
     title: "Aquafarm Kit V2",
-    org: "PT. Glace Digital Kreasi",
-    role: "Application Developer",
-    period: "2024 · Internship",
+    org: "PT. Glace Kreasi Digital",
+    role: "Frontend Developer Intern",
+    period: "Jan 2026 — Feb 2026 · Internship",
     highlight:
-      "An interactive microservices-based smart library application for modern libraries.",
-    tags: ["React", "Next.js", "Express", "PostgreSQL"],
+      "A smart aquaculture IoT and web platform for real-time water quality monitoring and fisheries management.",
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "IoT"],
     hasCaseStudy: false,
     gradient: "from-purple-100 to-fuchsia-100",
-    monogram: "ED",
-    tagline: "Library Management System",
+    monogram: "AF",
+    tagline: "Smart Aquaculture Monitoring Platform",
     accentColor: "#f3e8ff",
     category: "Engineering",
-    githubUrl: "https://github.com/rizkynugrahaputra",
-    imageUrl: "/img/aquaUI.png",
+    githubUrl: "https://github.com/tutupolpenn/AquafarmKitV2-Frontend",
+    imageUrl: "/img/aquaUI.webp",
   },
   {
     id: "monetra",
@@ -97,8 +81,8 @@ export const projects: Project[] = [
     tagline: "Personal finance tracking app with modern UI.",
     accentColor: "#c7d2fe",
     category: "Design",
-    githubUrl: "https://github.com/rizkynugraha/monetra-app",
-    imageUrl: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=85&w=800&auto=format&fit=crop",
+    githubUrl: "https://github.com/tutupolpenn/MONETRA",
+    imageUrl: "/img/analytics2.webp",
   },
   {
     id: "vr-borobudur",
@@ -115,8 +99,25 @@ export const projects: Project[] = [
     tagline: "Interactive reconstruction of hidden Borobudur relief panels.",
     accentColor: "#d9f99d",
     category: "3D & Hardware",
-    githubUrl: "https://github.com/rizkynugraha/borobudur-vr",
-    imageUrl: "/img/relief2.png",
+    githubUrl: "https://github.com/tutupolpenn/borobudurv3",
+    imageUrl: "/img/relief2.webp",
+  },
+  {
+    id: "task-management",
+    title: "Task Management App",
+    org: "Personal Project",
+    role: "UI/UX Designer",
+    period: "2024",
+    highlight:
+      "User interface design for a minimalist task management application.",
+    tags: ["Figma", "Prototyping", "UX Research"],
+    hasCaseStudy: false,
+    gradient: "from-pink-100 to-rose-100",
+    monogram: "TM",
+    tagline: "UI/UX App Design",
+    accentColor: "#fce7f3",
+    category: "Design",
+    imageUrl: "/img/Project.webp",
   },
   {
     id: "vr-kresek",
@@ -134,7 +135,7 @@ export const projects: Project[] = [
     accentColor: "#a7f3d0",
     category: "3D & Hardware",
     githubUrl: "https://github.com/tutupolpenn",
-    imageUrl: "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?q=85&w=800&auto=format&fit=crop",
+    imageUrl: "/img/relief.webp",
   },
   {
     id: "portfolio-web",
@@ -151,8 +152,8 @@ export const projects: Project[] = [
     tagline: "Showcasing my digital journey.",
     accentColor: "#d6d3d1",
     category: "Engineering",
-    githubUrl: "https://github.com/tutupolpenn",
-    imageUrl: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=85&w=800&auto=format&fit=crop",
+    githubUrl: "https://github.com/rizkynugr-portfolio/porfolioV2-Rizkynugr",
+    imageUrl: "/img/bg2-2.webp",
   },
 ];
 
@@ -196,9 +197,9 @@ Each API endpoint was tested using Postman with a test suite covering happy path
 5 field technicians and 2 PLN supervisors were involved in a 3-day UAT session. Main feedback implemented: (1) simplifying the input form into 2 steps, (2) adding a "Save Draft" button for incomplete inputs, (3) increasing the font size on form labels for ease of use in the field.`,
     },
     documentation: [
-      { image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1200&auto=format&fit=crop", caption: "Database Schema Design & Transformer Data Relations" },
-      { image: "https://images.unsplash.com/photo-1623282033815-40b05d96c903?q=80&w=1200&auto=format&fit=crop", caption: "Node.js Backend Implementation & API Endpoints" },
-      { image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1200&auto=format&fit=crop", caption: "Automated PDF Report Extraction System for Monthly Evaluation" }
+      { image: "/img/dashboardPLN.webp", caption: "Transformer Management Dashboard & Real-Time Status" },
+      { image: "/img/backend.webp", caption: "Node.js REST API Architecture & MySQL Relational Mapping" },
+      { image: "/img/documentation.webp", caption: "Field Testing & Monthly PDF Evaluation Reporting System" }
     ]
   },
 
@@ -245,9 +246,8 @@ Third scenario: Edit a category → verify all related transactions update consi
 3 rounds of feedback with 4 beta users resulted in significant changes to the "add transaction" flow: from a single-page form to a 3-step bottom sheet that feels more gesturally natural on mobile.`,
     },
     documentation: [
-      { image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop", caption: "Monetra Main Dashboard & Chart.js Visualization" },
-      { image: "https://images.unsplash.com/photo-1616077168079-7eb75151449e?q=80&w=1200&auto=format&fit=crop", caption: "Income & Expense Category Customization Interface" },
-      { image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1200&auto=format&fit=crop", caption: "Zustand State Management Implementation & Visual Regression Testing" }
+      { image: "/img/Analytics.webp", caption: "Monetra Main Dashboard & Chart.js Visualization" },
+      { image: "/img/analytics2.webp", caption: "Expense Category Customization & Financial Analytics" }
     ]
   },
 };
@@ -264,5 +264,5 @@ export const socialLinks = {
 export const techStack: Record<string, string[]> = {
   "Engineering": ["React", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion", "Node.js", "Express", "Sequelize", "MySQL"],
   "Design": ["Figma (UI/UX)", "Clean Design", "UX Research", "Prototyping"],
-  "3D & Hardware": ["Blender (3D Modeling)", "VR Environment", "Arduino (Dynamic PWM)", "IoT"],
+  "3D & Hardware": ["Blender (3D Modeling)", "VR Environment", "IoT"],
 };

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FlippingWordSwap } from "./ui/FlippingWordSwap";
 import { Halo } from "./ui/Halo";
 
-const MEDIA_SRC = "/img/bg-01.png";
+const MEDIA_SRC = "/img/bg-01.webp";
 
 interface HeroProps {
   onExpanded: () => void;
@@ -153,11 +153,13 @@ export default function Hero({ onExpanded }: HeroProps) {
         </div>
       </div>
 
-      {/* Split title */}
-      <div className="absolute inset-0 z-20 pointer-events-none flex flex-col items-center justify-center gap-2 px-4 mix-blend-difference">
+      {/* Split title with semantic h1 for SEO */}
+      <h1 className="absolute inset-0 z-20 pointer-events-none flex flex-col items-center justify-center gap-2 px-4 mix-blend-difference">
+        <span className="sr-only">Rizky Nugraha — Full-Stack Software Engineer &amp; UI/UX Designer</span>
         <motion.div
           style={{ x: `-${titleX}vw`, fontFamily: "'Outfit', sans-serif" }}
           className="will-change-transform flex justify-center w-full"
+          aria-hidden="true"
         >
           <FlippingWordSwap
             word1="RIZKY"
@@ -170,6 +172,7 @@ export default function Hero({ onExpanded }: HeroProps) {
         <motion.div
           style={{ x: `${titleX}vw`, fontFamily: "'Outfit', sans-serif" }}
           className="will-change-transform flex justify-center w-full"
+          aria-hidden="true"
         >
           <FlippingWordSwap
             word1="NUGRAHA"
@@ -179,7 +182,7 @@ export default function Hero({ onExpanded }: HeroProps) {
             className="text-purple-200 font-bold text-[clamp(2.5rem,6vw,6rem)] leading-[0.9] tracking-[-0.06em] text-center uppercase"
           />
         </motion.div>
-      </div>
+      </h1>
 
       {/* Minimalist scroll indicator */}
       <motion.div

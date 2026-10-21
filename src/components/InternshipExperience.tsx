@@ -8,8 +8,8 @@ const education = [
   {
     id: "ED",
     company: "Universitas Sebelas Maret",
-    role: "Diploma 3 Teknik Informatika (Informatics Engineering)",
-    period: "2023 — 2026",
+    role: "Associate of Informatics Engineering",
+    period: "Aug 2023 — Jul 2026",
     description: (
       <>
         Studied <strong>software engineering, modern web programming</strong>, data structures, and database structures by completing <strong>115 credits</strong> and achieving a <strong>3.61 GPA</strong>.
@@ -22,8 +22,8 @@ const education = [
       <><strong>Collaborative Activities:</strong> Collaborated in a technology research team and successfully won <strong>3rd Place nationally</strong> at the 9th Indonesian Vocational Olympiad (OLIVIA IX) in 2024 for the Digital & Creative Technology category.</>
     ],
     images: [
-      { title: "VR Research", image: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1200&auto=format&fit=crop", alt: "VR Headset" },
-      { title: "Software Engineering", image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop", alt: "Coding on laptop" },
+      { title: "VR Research", image: "/img/relief2.webp", alt: "VR Headset" },
+      { title: "Software Engineering", image: "/img/backend.webp", alt: "Coding on laptop" },
       { title: "Sebelas Maret University", image: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Gerbang_Depan_UNS_Universitas_Sebelas_Maret_Surakarta_03.jpg", alt: "University Campus" },
     ]
   }
@@ -32,8 +32,8 @@ const education = [
 const experiences = [
   {
     id: "01",
-    company: "PT. Glace Digital Kreasi",
-    role: "Application Developer Intern",
+    company: "PT. Glace Kreasi Digital",
+    role: "Frontend Developer Intern",
     period: "Jan 2026 — Feb 2026",
     description: (
       <>
@@ -47,15 +47,15 @@ const experiences = [
       <>Conducted <strong>functional testing scenarios (UAT)</strong> to ensure system reliability before production.</>
     ],
     images: [
-      { title: "Dashboard UI", image: "/img/aquaUI.png", alt: "Code on screen", objectFit: "cover" as const },
-      { title: "Analytics", image: "/img/analytics2.png", alt: "Analytics dashboard", objectFit: "cover" as const },
-      { title: "Testing", image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1200&auto=format&fit=crop", alt: "Workspace setup" },
+      { title: "Dashboard UI", image: "/img/aquaUI.webp", alt: "Code on screen", objectFit: "cover" as const },
+      { title: "Analytics", image: "/img/analytics2.webp", alt: "Analytics dashboard", objectFit: "cover" as const },
+      { title: "Testing", image: "/img/Analytics.webp", alt: "Analytics & testing overview", objectFit: "cover" as const },
     ]
   },
   {
     id: "02",
-    company: "PLN UP3 Ponorogo",
-    role: "Full-Stack Developer Intern",
+    company: "PT. PLN (Persero)",
+    role: "Fullstack Developer Intern",
     period: "Sep 2025 — Dec 2025",
     description: (
       <>
@@ -69,9 +69,9 @@ const experiences = [
       <>Created an <strong>automated PDF report generation system</strong> to simplify the monthly evaluation routines for field technicians.</>
     ],
     images: [
-      { title: "System Dashboard", image: "/img/dashboardPLN.png", alt: "Database architecture", objectFit: "cover" as const },
-      { title: "Documentation", image: "/img/documentation.jpeg", alt: "API endpoints", objectFit: "cover" as const },
-      { title: "Testing", image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1200&auto=format&fit=crop", alt: "Report document" },
+      { title: "System Dashboard", image: "/img/dashboardPLN.webp", alt: "Database architecture", objectFit: "cover" as const },
+      { title: "Documentation", image: "/img/documentation.webp", alt: "API endpoints", objectFit: "cover" as const },
+      { title: "Backend Schema", image: "/img/backend.webp", alt: "Backend system architecture", objectFit: "cover" as const },
     ]
   }
 ];
@@ -82,7 +82,7 @@ export default function InternshipExperience() {
   const [expandedExp, setExpandedExp] = useState<number | null>(null);
 
   return (
-    <section className="w-full bg-white px-6 md:px-16 py-24 md:py-32">
+    <section id="experience" className="w-full bg-white px-6 md:px-16 py-24 md:py-32">
       <div className="max-w-[1200px] mx-auto">
 
         {/* Section Header */}
@@ -95,7 +95,7 @@ export default function InternshipExperience() {
               Experience & <br className="hidden md:block" /> Education.
             </h2>
           </div>
-          <p className="text-base md:text-lg text-justify text-black/60 max-w-sm">
+          <p className="text-base md:text-lg text-left text-black/60 max-w-sm">
             Building solid digital solutions from architectural logic to user interface experiences.
           </p>
         </div>
@@ -112,7 +112,10 @@ export default function InternshipExperience() {
               >
                 {/* Clickable Header */}
                 <button
+                  id={`exp-btn-${exp.id}`}
                   onClick={() => setExpandedExp(isExpanded ? null : index)}
+                  aria-expanded={isExpanded}
+                  aria-controls={`exp-panel-${exp.id}`}
                   className="w-full flex flex-col md:flex-row items-start md:items-center justify-between py-8 md:py-10 text-left cursor-pointer transition-colors hover:bg-black/[0.02]"
                 >
                   <div className="flex items-center gap-6 md:gap-12 w-full md:w-auto">
@@ -141,6 +144,9 @@ export default function InternshipExperience() {
                 <AnimatePresence initial={false}>
                   {isExpanded && (
                     <motion.div
+                      id={`exp-panel-${exp.id}`}
+                      role="region"
+                      aria-labelledby={`exp-btn-${exp.id}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -161,7 +167,7 @@ export default function InternshipExperience() {
                             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-black/40 mb-2">
                               Role Description
                             </p>
-                            <p className="text-base md:text-lg leading-relaxed text-justify text-black/70">
+                            <p className="text-base md:text-lg leading-relaxed text-left text-black/70">
                               {exp.description}
                             </p>
                           </div>
@@ -194,7 +200,7 @@ export default function InternshipExperience() {
                               {exp.tasks.map((task, i) => (
                                 <li key={i} className="flex items-start gap-3.5 text-black/75">
                                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-black/40 flex-shrink-0" />
-                                  <span className="leading-relaxed text-[15px] md:text-[1.05rem] text-justify tracking-[-0.01em]">{task}</span>
+                                  <span className="leading-relaxed text-[15px] md:text-[1.05rem] text-left tracking-[-0.01em]">{task}</span>
                                 </li>
                               ))}
                             </ul>
@@ -228,7 +234,10 @@ export default function InternshipExperience() {
               >
                 {/* Clickable Header */}
                 <button
+                  id={`edu-btn-${edu.id}`}
                   onClick={() => setExpandedEdu(isExpanded ? null : index)}
+                  aria-expanded={isExpanded}
+                  aria-controls={`edu-panel-${edu.id}`}
                   className="w-full flex flex-col md:flex-row items-start md:items-center justify-between py-8 md:py-10 text-left cursor-pointer transition-colors hover:bg-black/[0.02]"
                 >
                   <div className="flex items-center gap-6 md:gap-12 w-full md:w-auto">
@@ -257,6 +266,9 @@ export default function InternshipExperience() {
                 <AnimatePresence initial={false}>
                   {isExpanded && (
                     <motion.div
+                      id={`edu-panel-${edu.id}`}
+                      role="region"
+                      aria-labelledby={`edu-btn-${edu.id}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -277,7 +289,7 @@ export default function InternshipExperience() {
                             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-black/40 mb-2">
                               Degree Overview
                             </p>
-                            <p className="text-base md:text-lg leading-relaxed text-justify text-black/70">
+                            <p className="text-base md:text-lg leading-relaxed text-left text-black/70">
                               {edu.description}
                             </p>
                           </div>
@@ -310,7 +322,7 @@ export default function InternshipExperience() {
                               {edu.tasks.map((task, i) => (
                                 <li key={i} className="flex items-start gap-3.5 text-black/75">
                                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-black/40 flex-shrink-0" />
-                                  <span className="leading-relaxed text-[15px] md:text-[1.05rem] text-justify tracking-[-0.01em]">{task}</span>
+                                  <span className="leading-relaxed text-[15px] md:text-[1.05rem] text-left tracking-[-0.01em]">{task}</span>
                                 </li>
                               ))}
                             </ul>

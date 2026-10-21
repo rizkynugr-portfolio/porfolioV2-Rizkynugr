@@ -68,10 +68,11 @@ function TiltPhotoCard() {
       className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-black/5 shadow-2xl bg-black/5 group w-full"
     >
       <img
-        src="/img/profile.jpg"
+        src="/img/profile.webp"
         alt="Rizky Nugraha Putra"
         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         draggable={false}
+        loading="lazy"
       />
       {/* Inner glass overlay for premium feel */}
       <div className="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.2)] rounded-3xl pointer-events-none" />
@@ -130,16 +131,16 @@ export default function About() {
               {...fade(0.25)}
               className="w-full lg:w-[70%] flex flex-col gap-6 max-w-[650px]"
             >
-              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-justify text-black/70">
+              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-left text-black/70">
                 I'm a Full-Stack Software Engineer & UI/UX Designer with a background in Informatics Engineering at Universitas Sebelas Maret.
               </p>
-              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-justify text-black/70">
+              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-left text-black/70">
                 I enjoy turning ideas into digital products that look good, work well, and feel intuitive. My work spans from building web applications with React, Node.js, and MySQL to designing interfaces and exploring 3D & VR experiences with Blender.
               </p>
-              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-justify text-black/70">
-                I'm also interested in the intersection of software, hardware, and real-world problems — from Arduino-based energy efficiency systems to interactive digital experiences.
+              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-left text-black/70">
+                I'm also interested in the intersection of software, hardware, and real-world problems — creating interactive digital experiences.
               </p>
-              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-justify text-black/70">
+              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-left text-black/70">
                 Basically, I like building things, breaking things, figuring out why they broke, and making them better.
               </p>
             </motion.div>

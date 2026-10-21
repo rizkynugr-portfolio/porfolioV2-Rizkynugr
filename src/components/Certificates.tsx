@@ -21,7 +21,7 @@ const certificates = [
       <>Implemented best practices in <strong>web accessibility and performance</strong>.</>
     ],
     images: [
-      { title: "Certificate", image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop", alt: "Certificate" }
+      { title: "Certificate", image: "/img/sertif.webp", alt: "Meta Front-End Certificate" }
     ]
   },
   {
@@ -41,7 +41,7 @@ const certificates = [
       <>Executed <strong>usability testing</strong> to validate workflows and design functionality.</>
     ],
     images: [
-      { title: "Certificate", image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop", alt: "Certificate" }
+      { title: "Certificate", image: "/img/sertif.webp", alt: "Meta Full Stack Specialization" }
     ]
   }
 ];
@@ -63,7 +63,7 @@ export default function Certificates() {
               Certificates & <br className="hidden md:block" /> Awards.
             </h2>
           </div>
-          <p className="text-base md:text-lg text-justify text-black/60 max-w-sm">
+          <p className="text-base md:text-lg text-left text-black/60 max-w-sm">
             A track record of achievements, skill certifications, and awards that validate professional competence.
           </p>
         </div>
@@ -80,7 +80,10 @@ export default function Certificates() {
               >
                 {/* Clickable Header */}
                 <button
+                  id={`cert-btn-${cert.id}`}
                   onClick={() => setExpandedCert(isExpanded ? null : index)}
+                  aria-expanded={isExpanded}
+                  aria-controls={`cert-panel-${cert.id}`}
                   className="w-full flex flex-col md:flex-row items-start md:items-center justify-between py-8 md:py-10 text-left cursor-pointer transition-colors hover:bg-black/[0.02]"
                 >
                   <div className="flex items-center gap-6 md:gap-12 w-full md:w-auto">
@@ -109,6 +112,9 @@ export default function Certificates() {
                 <AnimatePresence initial={false}>
                   {isExpanded && (
                     <motion.div
+                      id={`cert-panel-${cert.id}`}
+                      role="region"
+                      aria-labelledby={`cert-btn-${cert.id}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -129,7 +135,7 @@ export default function Certificates() {
                             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-black/40 mb-2">
                               Certification Overview
                             </p>
-                            <p className="text-base md:text-lg leading-relaxed text-justify text-black/70">
+                            <p className="text-base md:text-lg leading-relaxed text-left text-black/70">
                               {cert.description}
                             </p>
                           </div>
@@ -161,7 +167,7 @@ export default function Certificates() {
                             {cert.tasks.map((task, i) => (
                               <li key={i} className="flex items-start gap-3.5 text-black/75">
                                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-black/40 flex-shrink-0" />
-                                <span className="leading-relaxed text-[15px] md:text-[1.05rem] text-justify tracking-[-0.01em]">{task}</span>
+                                <span className="leading-relaxed text-[15px] md:text-[1.05rem] text-left tracking-[-0.01em]">{task}</span>
                               </li>
                             ))}
                           </ul>

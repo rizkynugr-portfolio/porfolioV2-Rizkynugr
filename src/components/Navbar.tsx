@@ -54,7 +54,14 @@ export default function Navbar({ isVisible = true }: { isVisible?: boolean }) {
 
             {/* Download CV Action */}
             <StyledWrapper>
-              <a href="/cv-rizky-nugraha.pdf" download className="btn-53">
+              <a
+                href="/cv-rizky-nugraha.pdf"
+                download="Resume_Rizky_Nugraha_Putra.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-53"
+                aria-label="Download Resume PDF"
+              >
                 <div className="original">Resume</div>
                 <div className="letters">
                   <span>R</span>

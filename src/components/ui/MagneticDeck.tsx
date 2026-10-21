@@ -4,12 +4,12 @@ import { useEffect, useRef } from "react";
 
 // ── Card photos — swap these for your own (one per card) ──────────────────
 const CARDS = [
-  { src: "https://cdn.simpleicons.org/react/61DAFB", caption: "React" },
-  { src: "https://cdn.simpleicons.org/typescript/3178C6", caption: "TypeScript" },
-  { src: "https://cdn.simpleicons.org/tailwindcss/06B6D4", caption: "Tailwind CSS" },
-  { src: "https://cdn.simpleicons.org/vite/646CFF", caption: "Vite" },
-  { src: "https://cdn.simpleicons.org/framer/black", caption: "Framer Motion" },
-  { src: "https://cdn.simpleicons.org/nodedotjs/339933", caption: "Node.js" }
+  { src: "/icons/react.svg", caption: "React" },
+  { src: "/icons/typescript.svg", caption: "TypeScript" },
+  { src: "/icons/tailwindcss.svg", caption: "Tailwind CSS" },
+  { src: "/icons/vite.svg", caption: "Vite" },
+  { src: "/icons/framer.svg", caption: "Framer Motion" },
+  { src: "/icons/nodedotjs.svg", caption: "Node.js" }
 ];
 
 // ── physics tuning ────────────────────────────────────────────────────────

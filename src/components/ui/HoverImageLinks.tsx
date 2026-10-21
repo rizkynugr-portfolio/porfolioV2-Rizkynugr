@@ -7,32 +7,32 @@ export const HoverImageLinks = () => {
       <div className="mx-auto max-w-6xl">
         <Link
           heading="About"
-          subheading="Lebih jauh tentang perjalanan dan keahlian saya."
-          imgSrc="/img/profile.jpg"
+          subheading="Learn more about my background, skills, and technical journey."
+          imgSrc="/img/profile.webp"
           href="#about"
         />
         <Link
           heading="Experience"
-          subheading="Rekam jejak profesional dan pendidikan."
-          imgSrc="/img/documentation.jpeg"
+          subheading="Professional career milestones and formal education."
+          imgSrc="/img/documentation.webp"
           href="#experience"
         />
         <Link
           heading="Projects"
-          subheading="Kumpulan karya dan eksplorasi teknis."
-          imgSrc="/img/Project.png"
+          subheading="Featured engineering projects, systems, and creative work."
+          imgSrc="/img/Project.webp"
           href="#projects"
         />
         <Link
           heading="Certificates"
-          subheading="Sertifikasi dan penghargaan profesional."
-          imgSrc="/img/sertif.jpg"
+          subheading="Skill credentials, industry certifications, and awards."
+          imgSrc="/img/sertif.webp"
           href="#certificates"
         />
         <Link
           heading="Contact"
-          subheading="Mari berkolaborasi membangun hal hebat."
-          imgSrc="/img/contact.jpg"
+          subheading="Let's connect, collaborate, and build something remarkable."
+          imgSrc="/img/contact.webp"
           href="#contact"
         />
       </div>

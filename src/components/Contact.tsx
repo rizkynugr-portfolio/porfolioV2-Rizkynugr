@@ -43,7 +43,7 @@ const SOCIALS = [
     label: "LinkedIn",
     href: socialLinks.linkedin,
     icon: <LinkedInIcon />,
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=800&auto=format&fit=crop",
     desc: "Let's connect professionally."
   },
   {
@@ -64,14 +64,14 @@ const SOCIALS = [
     label: "Threads",
     href: socialLinks.threads,
     icon: <ThreadsIcon />,
-    image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?q=80&w=800&auto=format&fit=crop",
     desc: "Join the conversation and thoughts."
   },
   {
     label: "Facebook",
     href: socialLinks.facebook,
     icon: <FacebookIcon />,
-    image: "https://images.unsplash.com/photo-1511649475669-e288648b2339?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
     desc: "Connect with me and the community."
   },
   {
@@ -110,13 +110,29 @@ export default function Contact() {
               Crafting premium digital experiences, immersive components, and creative web solutions built for the next generation.
             </p>
 
-            <a
-              href={`mailto:${socialLinks.email}`}
-              className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-white/20 hover:bg-white hover:text-black transition-all duration-300 font-medium"
-            >
-              Start a project
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-            </a>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href={`mailto:${socialLinks.email}`}
+                className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-white/20 hover:bg-white hover:text-black transition-all duration-300 font-medium text-sm"
+              >
+                Start a project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+              <a
+                href="/cv-rizky-nugraha.pdf"
+                download="Resume_Rizky_Nugraha_Putra.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-white/10 hover:bg-white hover:text-black transition-all duration-300 font-medium text-white/90 text-sm"
+              >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Resume
+              </a>
+            </div>
           </div>
 
           {/* Right Column: Existing Accordion */}
@@ -144,7 +160,7 @@ export default function Contact() {
 
                 {/* Expanded State Content (Image & Text) */}
                 <div className="relative w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 mt-[50px] xl:mt-0 xl:ml-[70px]">
-                  <img src={social.image} alt={social.label} className="w-full h-full object-cover" />
+                  <img src={social.image} alt={social.label} className="w-full h-full object-cover" loading="lazy" decoding="async" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
                   <div className="absolute bottom-0 left-0 w-full p-4 xl:p-6 pb-6 xl:pb-6">
                     <h3 className="text-white text-lg xl:text-xl font-bold mb-1" style={{ fontFamily: "'Outfit', sans-serif" }}>{social.label}</h3>
