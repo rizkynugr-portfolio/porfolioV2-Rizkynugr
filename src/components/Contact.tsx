@@ -1,6 +1,7 @@
 "use client";
 
 import { socialLinks } from "../data/portfolio";
+import { downloadResume } from "../utils/downloadResume";
 
 function LinkedInIcon() {
   return (
@@ -121,8 +122,7 @@ export default function Contact() {
               <a
                 href="/cv-rizky-nugraha.pdf"
                 download="Resume_Rizky_Nugraha_Putra.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={downloadResume}
                 className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-white/10 hover:bg-white hover:text-black transition-all duration-300 font-medium text-white/90 text-sm"
               >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

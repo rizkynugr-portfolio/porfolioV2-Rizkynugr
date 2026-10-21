@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import styled from "styled-components";
+import { downloadResume } from "../utils/downloadResume";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -57,8 +58,7 @@ export default function Navbar({ isVisible = true }: { isVisible?: boolean }) {
               <a
                 href="/cv-rizky-nugraha.pdf"
                 download="Resume_Rizky_Nugraha_Putra.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={downloadResume}
                 className="btn-53"
                 aria-label="Download Resume PDF"
               >
