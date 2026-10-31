@@ -9,17 +9,17 @@ const education = [
     id: "ED",
     company: "Universitas Sebelas Maret",
     role: "Associate of Informatics Engineering",
-    period: "Aug 2023 — Jul 2026",
+    period: "Aug 2023 – Jul 2026",
     description: (
       <>
-        Studied <strong>software engineering, modern web programming</strong>, data structures, and database structures by completing <strong>115 credits</strong> and achieving a <strong>3.61 GPA</strong>.
+        Completed <strong>115 credits</strong> with a <strong>3.61 GPA</strong>, focusing on <strong>full-stack web development</strong>, data structures, relational databases, and real-time 3D rendering.
       </>
     ),
     tags: ["Software Engineering", "UI/UX", "VR Development", "Computer Science"],
     tasks: [
-      <><strong>Final Project:</strong> Developed a <strong>Virtual Reality</strong> application to reconstruct 160 hidden relief panels of Borobudur Temple as an interactive digital historical preservation medium.</>,
-      <><strong>Practical Projects:</strong> Developed more than 5 responsive full-stack application projects using <strong>React.js, Node.js, and RESTful APIs</strong> with comprehensive testing.</>,
-      <><strong>Collaborative Activities:</strong> Collaborated in a technology research team and successfully won <strong>3rd Place nationally</strong> at the 9th Indonesian Vocational Olympiad (OLIVIA IX) in 2024 for the Digital & Creative Technology category.</>
+      <><strong>Final Project:</strong> Reconstructed 160 hidden Karmavibhanga relief panels at Borobudur Temple in Blender and built a <strong>Virtual Reality</strong> walk-through around them.</>,
+      <><strong>Coursework & Labs:</strong> Shipped 5+ full-stack web apps using <strong>React.js, Node.js, and REST APIs</strong>, backed by Postman and end-to-end test suites.</>,
+      <><strong>Competition:</strong> Won <strong>3rd Place nationally</strong> at the 9th Indonesian Vocational Olympiad (OLIVIA IX) in 2024 in the Digital & Creative Technology category.</>
     ],
     images: [
       { title: "VR Research", image: "/img/relief2.webp", alt: "VR Headset" },
@@ -34,17 +34,17 @@ const experiences = [
     id: "01",
     company: "PT. Glace Kreasi Digital",
     role: "Frontend Developer Intern",
-    period: "Jan 2026 — Feb 2026",
+    period: "Jan 2026 – Feb 2026",
     description: (
       <>
-        Responsible as the lead developer for the <strong>Aquafarm Kit V2</strong> project. Developed a digital aquaculture platform for fisheries data management and monitoring. Conducted comprehensive <strong>functional testing</strong> phases to ensure all application features worked according to the workflow before final release.
+        Led frontend development on <strong>Aquafarm Kit V2</strong>, a web dashboard that tracks pond water quality sensors and fisheries records, then ran functional testing across every user flow before release.
       </>
     ),
     tags: ["React", "Node.js", "Functional Testing", "Aquaculture Tech"],
     tasks: [
-      <>Developed the <strong>frontend architecture</strong> using <strong>React</strong> with <strong>real-time</strong> data integration.</>,
-      <>Redesigned the <strong>dashboard</strong> interface for monitoring water quality and pond conditions.</>,
-      <>Conducted <strong>functional testing scenarios (UAT)</strong> to ensure system reliability before production.</>
+      <>Built the <strong>React frontend</strong> and wired it up to live sensor streams.</>,
+      <>Redesigned the <strong>monitoring dashboard</strong> so pond operators can check water parameters at a glance.</>,
+      <>Ran <strong>UAT scenarios</strong> against the staging build to catch edge-case bugs before production.</>
     ],
     images: [
       { title: "Dashboard UI", image: "/img/aquaUI.webp", alt: "Code on screen", objectFit: "cover" as const },
@@ -56,17 +56,17 @@ const experiences = [
     id: "02",
     company: "PT. PLN (Persero)",
     role: "Fullstack Developer Intern",
-    period: "Sep 2025 — Dec 2025",
+    period: "Sep 2025 – Dec 2025",
     description: (
       <>
-        Built and designed a transformer defect reporting system <strong>end-to-end</strong>. This project facilitated the <strong>digitalization of recording and evaluating electrical infrastructure</strong>, replacing manual workflows with a more efficient and centralized data management system.
+        Designed and built an internal web application for PLN UP3 Ponorogo that replaced paper defect sheets and disconnected Excel files with a single MySQL-backed reporting system.
       </>
     ),
     tags: ["Full-Stack", "End-to-End System", "Database Architecture", "UI/UX"],
     tasks: [
-      <>Built an <strong>interactive REST API</strong> using <strong>Node.js and Express</strong> connected to a <strong>MySQL</strong> database.</>,
-      <>Designed an <strong>efficient database schema</strong> to accommodate thousands of transformer defect records dynamically.</>,
-      <>Created an <strong>automated PDF report generation system</strong> to simplify the monthly evaluation routines for field technicians.</>
+      <>Built the <strong>Node.js and Express REST API</strong> with JWT role permissions for technicians, supervisors, and admins.</>,
+      <>Structured the <strong>MySQL schema</strong> and wrote a migration script to import historical spreadsheet records.</>,
+      <>Added <strong>one-click PDF report generation</strong> so monthly evaluations take seconds instead of hours.</>
     ],
     images: [
       { title: "System Dashboard", image: "/img/dashboardPLN.webp", alt: "Database architecture", objectFit: "cover" as const },
@@ -96,7 +96,7 @@ export default function InternshipExperience() {
             </h2>
           </div>
           <p className="text-base md:text-lg text-left text-black/60 max-w-sm">
-            Building solid digital solutions from architectural logic to user interface experiences.
+            Where I've interned, what I shipped there, and what I studied at UNS.
           </p>
         </div>
 

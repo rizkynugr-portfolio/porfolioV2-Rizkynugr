@@ -176,7 +176,7 @@ export default function Projects({ onOpenCaseStudy }: ProjectsProps) {
             className="text-4xl md:text-6xl font-bold tracking-[-0.04em] text-black max-w-2xl leading-[1.05]"
             style={{ fontFamily: "'Outfit', sans-serif" }}
           >
-            Crafted with precision.
+            Things I've built and shipped.
           </h2>
         </motion.div>
 

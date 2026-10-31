@@ -35,14 +35,14 @@ export const projects: Project[] = [
     title: "Transformer Defect Reporting System",
     org: "PT. PLN (Persero)",
     role: "Fullstack Developer Intern",
-    period: "Sep 2025 — Dec 2025 · Internship",
+    period: "Sep 2025 – Dec 2025 · Internship",
     highlight:
-      "An end-to-end digital system for recording & evaluating PLN distribution transformer infrastructure.",
+      "Web app for PLN field technicians to log distribution transformer defects, track repair status, and generate monthly PDF reports.",
     tags: ["React", "Node.js", "Express", "MySQL", "Sequelize"],
     hasCaseStudy: true,
     gradient: "from-blue-100 to-indigo-100",
     monogram: "PL",
-    tagline: "Digital Transformer Management",
+    tagline: "Distribution transformer defect tracking",
     accentColor: "#dbeafe",
     category: "Engineering",
     githubUrl: "https://github.com/tutupolpenn/Magang-PLN",
@@ -53,14 +53,14 @@ export const projects: Project[] = [
     title: "Aquafarm Kit V2",
     org: "PT. Glace Kreasi Digital",
     role: "Frontend Developer Intern",
-    period: "Jan 2026 — Feb 2026 · Internship",
+    period: "Jan 2026 – Feb 2026 · Internship",
     highlight:
-      "A smart aquaculture IoT and web platform for real-time water quality monitoring and fisheries management.",
+      "IoT aquaculture dashboard that reads live pond water quality sensors and logs fisheries data.",
     tags: ["React", "Node.js", "Express", "PostgreSQL", "IoT"],
     hasCaseStudy: false,
     gradient: "from-purple-100 to-fuchsia-100",
     monogram: "AF",
-    tagline: "Smart Aquaculture Monitoring Platform",
+    tagline: "Live pond water quality & fisheries dashboard",
     accentColor: "#f3e8ff",
     category: "Engineering",
     githubUrl: "https://github.com/tutupolpenn/AquafarmKitV2-Frontend",
@@ -73,12 +73,12 @@ export const projects: Project[] = [
     role: "Lead Developer & UI/UX Designer",
     period: "2024",
     highlight:
-      "A personal finance tracking application with premium UI/UX and complex state management.",
+      "Expense tracker built with Zustand and Chart.js that updates balances and category breakdowns on the fly.",
     tags: ["React", "Tailwind CSS", "Chart.js", "Zustand"],
     hasCaseStudy: true,
     gradient: "from-violet-600 to-purple-900",
     monogram: "MN",
-    tagline: "Personal finance tracking app with modern UI.",
+    tagline: "Personal expense tracker with live charts.",
     accentColor: "#c7d2fe",
     category: "Design",
     githubUrl: "https://github.com/tutupolpenn/MONETRA",
@@ -91,12 +91,12 @@ export const projects: Project[] = [
     role: "Researcher & 3D Environment Builder",
     period: "2025 · Final Project",
     highlight:
-      "Digital reconstruction of the Karmavibhanga relief of Borobudur Temple in a Virtual Reality environment.",
+      "3D reconstruction of 160 hidden Karmavibhanga relief panels at Borobudur Temple, built in Blender for Virtual Reality.",
     tags: ["Blender", "VR", "UV Mapping", "Shader Editor"],
     hasCaseStudy: false,
     gradient: "from-amber-500 to-orange-800",
     monogram: "BR",
-    tagline: "Interactive reconstruction of hidden Borobudur relief panels.",
+    tagline: "VR walk-through of 160 hidden Borobudur relief panels.",
     accentColor: "#d9f99d",
     category: "3D & Hardware",
     githubUrl: "https://github.com/tutupolpenn/borobudurv3",
@@ -109,12 +109,12 @@ export const projects: Project[] = [
     role: "UI/UX Designer",
     period: "2024",
     highlight:
-      "User interface design for a minimalist task management application.",
+      "Mobile task manager UI designed in Figma around quick daily capture and clean priority views.",
     tags: ["Figma", "Prototyping", "UX Research"],
     hasCaseStudy: false,
     gradient: "from-pink-100 to-rose-100",
     monogram: "TM",
-    tagline: "UI/UX App Design",
+    tagline: "Mobile task manager UI in Figma",
     accentColor: "#fce7f3",
     category: "Design",
     imageUrl: "/img/Project.webp",
@@ -126,12 +126,12 @@ export const projects: Project[] = [
     role: "Research Team Member",
     period: "2024",
     highlight:
-      "Digital reconstruction and interactive Virtual Reality experience of the historical Kresek Monument.",
+      "3D model and Unity VR walk-through of the historical Kresek Monument in Madiun.",
     tags: ["Blender", "Virtual Reality", "3D Modeling", "Unity"],
     hasCaseStudy: false,
     gradient: "from-emerald-500 to-teal-800",
     monogram: "KM",
-    tagline: "Immersive digital preservation of historical monuments.",
+    tagline: "3D & VR walk-through of Kresek Monument.",
     accentColor: "#a7f3d0",
     category: "3D & Hardware",
     githubUrl: "https://github.com/tutupolpenn",
@@ -144,12 +144,12 @@ export const projects: Project[] = [
     role: "Frontend Developer & UI/UX Designer",
     period: "2024",
     highlight:
-      "A modern, highly interactive personal portfolio website showcasing projects, skills, and experiences with dynamic animations.",
+      "This site: custom scroll-driven hero, spring-physics card deck, and lazy-loaded case studies built on React and Vite.",
     tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
     hasCaseStudy: false,
     gradient: "from-zinc-500 to-stone-800",
     monogram: "RN",
-    tagline: "Showcasing my digital journey.",
+    tagline: "React, TypeScript & Framer Motion portfolio.",
     accentColor: "#d6d3d1",
     category: "Engineering",
     githubUrl: "https://github.com/rizkynugr-portfolio/porfolioV2-Rizkynugr",
@@ -159,42 +159,42 @@ export const projects: Project[] = [
 
 export const caseStudies: Record<string, CaseStudyData> = {
   pln: {
-    title: "Transformer Defect Reporting System — PLN UP3 Ponorogo",
+    title: "Transformer Defect Reporting System (PLN UP3 Ponorogo)",
     sections: {
-      problem: `PLN UP3 Ponorogo manages hundreds of distribution transformers within its working area. The process of recording conditions and reporting transformer defects was still done manually — using paper forms and unintegrated Excel spreadsheets.
+      problem: `PLN UP3 Ponorogo oversees hundreds of distribution transformers across its service area. Up until late 2025, field technicians logged inspections on paper forms and copied them into separate Excel files back at the office.
 
-As a result, data was scattered across various documents, the evaluation process took a long time, and there was no automatic notification mechanism when a transformer reached a critical defect threshold. This risked causing unexpected power outages.`,
+Because those spreadsheets weren't linked, supervisors spent hours cross-checking files to spot recurring faults. Nobody got an alert when a transformer hit a critical defect threshold, which left the grid exposed to avoidable outages.`,
 
-      solution: `A full-stack web system was built encompassing four main components:
+      solution: `I built a full-stack web application around four pieces:
 
 **Admin Dashboard**
-A summary view of the condition of all transformers on a single screen, equipped with color status indicators (green / yellow / red) based on configured parameter thresholds.
+Shows all distribution transformers on one screen with green, yellow, and red status indicators tied to configured defect thresholds.
 
-**Digital Forms**
-A replacement for paper forms with real-time input validation, ensuring the data inputted by field technicians is accurate and complete before being saved to the database.
+**Digital Field Forms**
+Replaces paper sheets with validated mobile-friendly forms so technicians catch missing or out-of-range readings before saving to MySQL.
 
-**History System & Audit Trail**
-Every data change is recorded with a timestamp and the identity of the officer making the change — facilitating evaluation and accountability.
+**Audit Trail & History**
+Logs every update with a timestamp and officer ID, so supervisors can trace who changed a transformer's status and when.
 
-**Automated PDF Reports**
-Automatically generate monthly evaluation reports directly from the system, replacing the manual recapitulation process that previously took hours.`,
+**One-Click Monthly PDF Reports**
+Generates the monthly evaluation PDF straight from the database instead of someone spending hours copying rows out of Excel.`,
 
-      challenges: `**Challenge 1: Historical Data Migration**
-Old data in Excel spreadsheets had inconsistent formats across periods. Solution: built a custom parser script (Node.js) that normalizes and migrates the data into a structured MySQL schema.
+      challenges: `**Challenge 1: Messy Historical Spreadsheets**
+Years of Excel files used different column names and date formats depending on who typed them. I wrote a Node.js parser script to normalize those rows and import them into a clean MySQL schema without losing past inspection dates.
 
-**Challenge 2: Query Optimization for Large Data**
-The initial dashboard query took >3 seconds when data reached thousands of records. Solution: implemented composite indexes on frequently queried columns and server-side pagination using Sequelize.
+**Challenge 2: Slow Dashboard Queries**
+Once the database held several thousand inspection records, the main dashboard query took over 3 seconds to load. Adding composite indexes on the filter columns and moving to server-side pagination in Sequelize brought response times back down.
 
 **Challenge 3: Role-Based Access Control (RBAC)**
-The system required 3 different access levels: field technician, supervisor, and admin. Solution: implemented JWT middleware with a payload that includes a permission matrix per endpoint.`,
+Field technicians, supervisors, and admins each needed different permissions. I set up JWT middleware carrying an endpoint permission matrix so technicians can submit and edit drafts while only supervisors can sign off on evaluations.`,
 
-      testing: `The testing process was conducted in two structured phases:
+      testing: `We split testing into two stages before handover:
 
-**Phase 1 — Functional Testing (Unit & Integration)**
-Each API endpoint was tested using Postman with a test suite covering happy paths, edge cases (empty inputs, duplicate data), and unauthorized access. A total of 47 test cases were executed, passing 100% before the demo to PLN stakeholders.
+**Phase 1: API & Integration Testing**
+I ran 47 Postman test cases across every endpoint, checking normal submissions, empty or duplicate payloads, and unauthorized role tokens until all 47 passed ahead of the stakeholder demo.
 
-**Phase 2 — User Acceptance Testing (UAT)**
-5 field technicians and 2 PLN supervisors were involved in a 3-day UAT session. Main feedback implemented: (1) simplifying the input form into 2 steps, (2) adding a "Save Draft" button for incomplete inputs, (3) increasing the font size on form labels for ease of use in the field.`,
+**Phase 2: Field UAT with Technicians**
+Five field technicians and two PLN supervisors tested the app over three days. Their feedback led to three direct fixes: splitting the long inspection form into two shorter steps, adding a "Save Draft" button for spotty signal areas, and bumping up form label font sizes so they're easier to read outdoors.`,
     },
     documentation: [
       { image: "/img/dashboardPLN.webp", caption: "Transformer Management Dashboard & Real-Time Status" },
@@ -204,46 +204,43 @@ Each API endpoint was tested using Postman with a test suite covering happy path
   },
 
   monetra: {
-    title: "Monetra — Personal Finance Tracker",
+    title: "Monetra: Personal Finance Tracker",
     sections: {
-      problem: `Most available finance applications have interfaces that are either too complex and confusing, or too simple that they do not provide meaningful insights. Young users who are just starting to manage their personal finances need an intuitive tool that is not overwhelming, yet remains informative.
+      problem: `Most personal finance apps fall into one of two traps: either they bury you in accounting menus you don't need, or they act like a glorified notepad that tells you nothing about your spending habits.
 
-Additionally, similar applications often respond slowly to state changes — for example, when adding a transaction, the charts do not update instantly, creating an experience that feels unsmooth.`,
+Many lightweight trackers also feel sluggish. You log an expense, and the charts lag or wait for a full page reload before reflecting the new total.`,
 
-      solution: `Monetra is designed with a "clarity first" philosophy:
+      solution: `I built Monetra around fast input and instant visual feedback:
 
-**Minimalist Dashboard**
-A single main screen displays the running balance, this month's expenses, and the 5 latest transactions. There is no unnecessary information.
+**Single-Screen Overview**
+Shows your current balance, this month's spending, and your five most recent transactions without extra clutter.
 
 **Custom Categories**
-Users can create, edit, and color their own expense categories, not limited to the app's default templates.
+Lets you create, rename, and color-code your own spending categories instead of locking you into default presets.
 
-**Interactive Visualization**
-A donut chart (Chart.js) for expense distribution per category and a bar chart for monthly trends — both update reactively when data changes without the need to refresh the page.
+**Live Chart.js Breakdowns**
+A donut chart for category share and a bar chart for monthly spending trends; both redraw the moment you add or edit a transaction.
 
-**Filters & Reports**
-Filter transactions by period, category, or nominal range, with the ability to export to CSV for advanced analysis purposes.`,
+**Filtered CSV Exports**
+Slice transactions by date range, category, or amount, then export the filtered list to CSV when you want to dig deeper in a spreadsheet.`,
 
-      challenges: `**Challenge 1: Complex State Management**
-When a user adds a transaction, at least 4 different components must update their display simultaneously: balance, charts, transaction list, and category summary. Solution: migrated from prop-drilling to a Zustand store with granular selectors to avoid unnecessary re-renders.
+      challenges: `**Challenge 1: Keeping 4 Views in Sync**
+Adding a single expense has to update the running balance, the transaction list, the category summary, and both charts at the same time. I replaced early prop-drilling with a Zustand store using granular selectors so only the affected components re-render.
 
-**Challenge 2: Chart Performance with Large Data**
-Chart.js performs a full re-render every time the dataset changes. When the transaction history reaches hundreds of entries, this causes a noticeable lag. Solution: implemented data aggregation at the store layer (Zustand) so the Chart component only receives aggregated data, not raw transactions.
+**Challenge 2: Chart.js Lag on Large Histories**
+Chart.js re-renders the entire canvas when its dataset changes, which started stuttering once transaction history passed a few hundred entries. Moving the math into Zustand selector aggregations meant Chart.js only ever receives pre-summed totals instead of raw transaction arrays.
 
-**Challenge 3: Design Consistency**
-With many UI components developed iteratively, visual consistency began to waver. Solution: built a "design token" system in the Tailwind config (colors, spacing, shadows) and a minimal internal component library.`,
+**Challenge 3: UI Drift Across Iterations**
+Because I built the screens over several weeks, padding and shadow styles started drifting apart. Locking colors, spacing, and elevation tokens into the Tailwind config kept the components consistent.`,
 
-      testing: `**Phase 1 — Visual Regression Testing**
-Each UI component was screenshotted using Playwright at resolutions of 375px (mobile), 768px (tablet), and 1440px (desktop). The screenshots are saved as a baseline; every development iteration is automatically compared to detect visual regressions.
+      testing: `**Phase 1: Playwright Visual Regression**
+I captured baseline screenshots of each component across 375px (mobile), 768px (tablet), and 1440px (desktop) viewports in Playwright, comparing new builds against those baselines to catch layout shifts early.
 
-**Phase 2 — End-to-End Workflow Testing**
-Three complete workflow scenarios were manually tested:
-First scenario: New onboarding → setup category → add first transaction → verify dashboard.
-Second scenario: Filter transactions by month → verify total accuracy → export CSV → check file contents.
-Third scenario: Edit a category → verify all related transactions update consistently across all screens.
+**Phase 2: End-to-End Flows**
+I ran manual checks across the core user paths: onboarding from an empty account to logging a first expense, filtering a month's transactions and verifying the exported CSV math, and renaming a category to confirm every linked transaction updated across all views.
 
-**Iteration Feedback**
-3 rounds of feedback with 4 beta users resulted in significant changes to the "add transaction" flow: from a single-page form to a 3-step bottom sheet that feels more gesturally natural on mobile.`,
+**Beta User Changes**
+Four beta testers used the app across three feedback rounds. Their biggest complaint was the single-page "add transaction" form on mobile, so I rebuilt it into a three-step bottom sheet that's much easier to tap through with one thumb.`,
     },
     documentation: [
       { image: "/img/Analytics.webp", caption: "Monetra Main Dashboard & Chart.js Visualization" },

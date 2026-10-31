@@ -217,8 +217,8 @@ export function MagneticDeck() {
       <style>{css}</style>
 
       <div className="text-center mb-10 relative z-10 pointer-events-none">
-        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-black mb-4">Crafted with this Stack</h2>
-        <p className="text-gray-500 font-medium px-4">Interact with the cards or watch them scatter.</p>
+        <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-black mb-4">Core Stack</h2>
+        <p className="text-gray-500 font-medium px-4">Flick your cursor across the cards to scatter them.</p>
       </div>
 
       <div className="md-hub" ref={hubRef}>

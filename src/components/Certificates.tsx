@@ -11,14 +11,14 @@ const certificates = [
     period: "2025",
     description: (
       <>
-        Certification of expertise in building interactive web interfaces that are <strong>responsive and optimized</strong> using the latest industry standards.
+        Coursework covering component architecture, <strong>state management in React</strong>, and cross-device UI performance.
       </>
     ),
     tags: ["Frontend", "Web Development", "Meta"],
     tasks: [
-      <>Mastered the fundamentals of web programming with <strong>HTML, CSS, and JavaScript</strong>.</>,
-      <>Built web applications using <strong>React.js</strong> with good state management.</>,
-      <>Implemented best practices in <strong>web accessibility and performance</strong>.</>
+      <>Wrote semantic layouts and interactive UI components with <strong>HTML, CSS, and JavaScript</strong>.</>,
+      <>Built single-page applications in <strong>React.js</strong> using hooks and local state management.</>,
+      <>Audited pages for <strong>keyboard accessibility and load performance</strong>.</>
     ],
     images: [
       { title: "Certificate", image: "/img/sertif.webp", alt: "Meta Front-End Certificate" }
@@ -31,14 +31,14 @@ const certificates = [
     period: "2023",
     description: (
       <>
-        Comprehensive specialization in user research, wireframing, and <strong>interactive prototyping</strong>.
+        Hands-on training in user interviews, low-to-high fidelity wireframing, and <strong>clickable Figma prototypes</strong>.
       </>
     ),
     tags: ["UI/UX", "Figma", "Research", "Design"],
     tasks: [
-      <>Conducted <strong>user research</strong> to understand audience needs and behaviors.</>,
-      <>Designed high-fidelity <strong>wireframes and interactive prototypes</strong> using Figma.</>,
-      <>Executed <strong>usability testing</strong> to validate workflows and design functionality.</>
+      <>Ran <strong>user research sessions</strong> to map out task flows before drawing screens.</>,
+      <>Built high-fidelity <strong>wireframes and interactive prototypes</strong> in Figma.</>,
+      <>Tested prototypes with users to spot friction points in navigation and form flows.</>
     ],
     images: [
       { title: "Certificate", image: "/img/sertif.webp", alt: "Meta Full Stack Specialization" }
@@ -64,7 +64,7 @@ export default function Certificates() {
             </h2>
           </div>
           <p className="text-base md:text-lg text-left text-black/60 max-w-sm">
-            A track record of achievements, skill certifications, and awards that validate professional competence.
+            Courses and credentials I've completed outside university labs.
           </p>
         </div>
 

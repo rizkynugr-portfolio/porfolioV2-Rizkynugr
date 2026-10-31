@@ -45,35 +45,35 @@ const SOCIALS = [
     href: socialLinks.linkedin,
     icon: <LinkedInIcon />,
     image: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?q=80&w=800&auto=format&fit=crop",
-    desc: "Let's connect professionally."
+    desc: "Work history and professional updates."
   },
   {
     label: "GitHub",
     href: socialLinks.github,
     icon: <GitHubIcon />,
     image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=800&auto=format&fit=crop",
-    desc: "Check out my open source repositories."
+    desc: "Source code and project repositories."
   },
   {
     label: "Instagram",
     href: socialLinks.instagram,
     icon: <InstagramIcon />,
     image: "https://images.unsplash.com/photo-1611262588024-d12430b98920?q=80&w=800&auto=format&fit=crop",
-    desc: "Follow my visual journey & design process."
+    desc: "3D renders, UI shots, and life offline."
   },
   {
     label: "Threads",
     href: socialLinks.threads,
     icon: <ThreadsIcon />,
     image: "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?q=80&w=800&auto=format&fit=crop",
-    desc: "Join the conversation and thoughts."
+    desc: "Short notes on code and design."
   },
   {
     label: "Facebook",
     href: socialLinks.facebook,
     icon: <FacebookIcon />,
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
-    desc: "Connect with me and the community."
+    desc: "Personal profile and local groups."
   },
   {
     label: "Email",
@@ -83,7 +83,7 @@ const SOCIALS = [
     desc: (
       <>
         <span className="block font-semibold text-white/90">{socialLinks.email}</span>
-        Send me a direct message.
+        Write me directly.
       </>
     )
   },
@@ -108,7 +108,7 @@ export default function Contact() {
             </div>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-md">
-              Crafting premium digital experiences, immersive components, and creative web solutions built for the next generation.
+              Full-stack developer and UI/UX designer based in Indonesia. Open to software engineering roles and freelance web or 3D projects.
             </p>
 
             <div className="flex flex-wrap items-center gap-3">

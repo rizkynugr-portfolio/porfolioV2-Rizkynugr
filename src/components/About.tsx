@@ -113,7 +113,7 @@ export default function About() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-[-0.03em] text-black leading-[1.1] max-w-5xl"
               style={{ fontFamily: "'Outfit', sans-serif" }}
             >
-              Crafting digital experiences as a Fullstack Developer.
+              Full-stack code, interface design, and 3D environments.
             </motion.h2>
           </div>
 
@@ -132,16 +132,13 @@ export default function About() {
               className="w-full lg:w-[70%] flex flex-col gap-6 max-w-[650px]"
             >
               <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-left text-black/70">
-                I'm a Full-Stack Software Engineer & UI/UX Designer with a background in Informatics Engineering at Universitas Sebelas Maret.
+                I studied Informatics Engineering at Universitas Sebelas Maret, where I split my time between writing full-stack web apps and designing interfaces in Figma.
               </p>
               <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-left text-black/70">
-                I enjoy turning ideas into digital products that look good, work well, and feel intuitive. My work spans from building web applications with React, Node.js, and MySQL to designing interfaces and exploring 3D & VR experiences with Blender.
+                Most of my recent work sits close to physical operations: a web system for PLN Ponorogo technicians to log distribution transformer defects without paper forms, and an aquaculture dashboard that tracks pond water quality over IoT sensors. When I'm not wiring up React frontends or Node.js and MySQL backends, I model 3D assets in Blender; my final project reconstructed 160 hidden Karmavibhanga relief panels at Borobudur Temple for VR.
               </p>
               <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-left text-black/70">
-                I'm also interested in the intersection of software, hardware, and real-world problems — creating interactive digital experiences.
-              </p>
-              <p className="text-base md:text-[17px] leading-[1.6] md:leading-[1.7] text-left text-black/70">
-                Basically, I like building things, breaking things, figuring out why they broke, and making them better.
+                I like building things, breaking them, figuring out why they broke, and shipping a cleaner fix.
               </p>
             </motion.div>
           </div>
