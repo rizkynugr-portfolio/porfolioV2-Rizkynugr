@@ -8,8 +8,7 @@ const CARDS = [
   { src: "/icons/typescript.svg", caption: "TypeScript" },
   { src: "/icons/tailwindcss.svg", caption: "Tailwind CSS" },
   { src: "/icons/vite.svg", caption: "Vite" },
-  { src: "/icons/framer.svg", caption: "Framer Motion" },
-  { src: "/icons/nodedotjs.svg", caption: "Node.js" }
+  { src: "/icons/figma.svg", caption: "Figma" }
 ];
 
 // ── physics tuning ────────────────────────────────────────────────────────
@@ -23,9 +22,9 @@ const FRICTION = 0.86; // velocity damping per frame
 
 // rest pose of the fanned deck (design units, scaled to fit the viewport)
 const POSE = {
-  x: [-440, -266, -92, 92, 266, 440],
-  y: [22, -16, 28, -10, 24, -14],
-  rot: [-8, 6, -5, 8, -6, 7],
+  x: [-348, -174, 0, 174, 348],
+  y: [22, -16, 28, -10, 24],
+  rot: [-8, 6, -4, 7, -6],
 };
 const CARD_W = 214;
 const CARD_H = 286;
